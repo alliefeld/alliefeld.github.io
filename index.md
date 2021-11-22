@@ -15,7 +15,4 @@ randomlinks[1]="https://forms.gle/hok5Y4XkqZgi9fte9"
 function randomlink(){
 window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
 }
-
-
-randomlink()
 </script>
