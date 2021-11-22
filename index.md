@@ -1,9 +1,21 @@
-<script type="text/javascript">
-    var urls = new Array();
-    urls[0] = "https://forms.gle/7EX7uLGuwptimz6t6";
-    urls[1] = "https://forms.gle/jLmz2wf4x7KX9UTL9";
+<a href="javascript:openSite()">Click to go to a random site</a>
+<script>
+function openSite() {
+var links = [
+              "https://forms.gle/y7ZCYTBoQXMmQTXw5",
+              "https://forms.gle/hok5Y4XkqZgi9fte9"]
+
+            openSite = function() {
+              // get a random number between 0 and the number of links
+              var randIdx = Math.random() * links.length;
+              // round it, so it can be used as array index
+              randIdx = parseInt(randIdx, 10);
+              // construct the link to be opened
+              var link = 'http://' + links[randIdx];
+              };
+              
+    return link;
     
-    var random = Math.floor(Math.random()*urls.length);
-    window.location = urls[random];
+    document.getElementById("link").innerHTML = openSite();
+}
 </script>
-    
