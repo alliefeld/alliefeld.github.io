@@ -1,4 +1,4 @@
-<a href="javascript:openSite()">Click to go to a random site</a>
+<a href="javascript:openSite()">Click to go to form</a>
 <script>
 function openSite() {
 var links = [
