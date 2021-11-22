@@ -1,21 +1,20 @@
-<a href="javascript:openSite()">Click to go to form</a>
 <script>
-function openSite() {
-var links = [
-              "https://forms.gle/y7ZCYTBoQXMmQTXw5",
-              "https://forms.gle/hok5Y4XkqZgi9fte9"]
+<!--
+/*
+Random link button- By JavaScript Kit (http://javascriptkit.com)
+Over 300+ free scripts!
+This credit MUST stay intact for use
+*/
 
-            openSite = function() {
-              // get a random number between 0 and the number of links
-              var randIdx = Math.random() * links.length;
-              // round it, so it can be used as array index
-              randIdx = parseInt(randIdx, 10);
-              // construct the link to be opened
-              var link = 'http://' + links[randIdx];
-              };
-              
-    return link;
-    
-    document.getElementById("link").innerHTML = openSite();
+//specify random links below. You can have as many as you want
+var randomlinks=new Array()
+
+randomlinks[0]="https://forms.gle/y7ZCYTBoQXMmQTXw5"
+randomlinks[1]="https://forms.gle/hok5Y4XkqZgi9fte9"
+
+function randomlink(){
+window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
 }
-</script>
+
+
+randomlink()
