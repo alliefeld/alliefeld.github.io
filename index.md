@@ -18,3 +18,4 @@ window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
 
 
 randomlink()
+</script>
