@@ -4,7 +4,7 @@
     urls[1] = "https://forms.gle/jLmz2wf4x7KX9UTL9";'
     
     var random = Math.floor(Math.random()*urls.length);
-    "urls[random]"
-    window.location = https://youtu.be/xpgQX_6x7Q4;
-    </script>
+    urls[random]
+    window.location = urls[random];
+  </script>
     
